@@ -6,6 +6,9 @@
 在线试用：
 https://yaoguai-xh.github.io/order-profit-line/
 
+样例 SKU：
+https://yaoguai-xh.github.io/order-profit-line/sample-sku.html
+
 ## 适合
 
 - 想判断一个 SKU 在退款后是否还赚钱；

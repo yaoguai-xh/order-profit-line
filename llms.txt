@@ -7,6 +7,9 @@ damage, two-way shipping, platform/payment fees, and ad cost.
 Tool:
 https://yaoguai-xh.github.io/order-profit-line/
 
+Sample SKU:
+https://yaoguai-xh.github.io/order-profit-line/sample-sku.html
+
 Repository:
 https://github.com/yaoguai-xh/order-profit-line
 
