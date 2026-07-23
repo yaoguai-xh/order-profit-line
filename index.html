@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="免费计算退款、平台费、广告和双向物流后的订单贡献利润。">
+  <title>订单保本线 Lite</title>
+  <style>
+    :root{--ink:#1d2528;--muted:#60696d;--line:#d8dddc;--paper:#fff;--bg:#f4f6f4;--green:#176b55;--soft:#e6f1ed;--red:#a33d37;font-family:Inter,"PingFang SC","Microsoft YaHei",system-ui,sans-serif}*{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--bg);line-height:1.45}header{border-bottom:1px solid var(--line);background:#fff}.bar,main{width:min(900px,calc(100% - 24px));margin:0 auto}.bar{min-height:64px;display:flex;align-items:center;gap:11px}.mark{width:35px;height:35px;display:grid;place-items:center;color:#fff;background:var(--ink);border-radius:5px;font-size:11px;font-weight:800}.brand span{display:block;color:var(--muted);font-size:12px}main{margin-top:28px;margin-bottom:50px;display:grid;grid-template-columns:minmax(0,1fr) 310px;gap:17px;align-items:start}section,aside{background:var(--paper);border:1px solid var(--line);border-radius:6px}section{padding:24px}aside{position:sticky;top:16px;overflow:hidden}h1{margin:0 0 7px;font-size:24px;letter-spacing:0}p{color:var(--muted)}.grid{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:20px}label{display:grid;gap:5px;color:var(--muted);font-size:12px;font-weight:650}input{width:100%;min-height:40px;padding:8px 10px;border:1px solid var(--line);border-radius:6px;font:inherit}.hero{padding:21px;color:#fff;background:var(--ink)}.hero span{color:#d2d9d7;font-size:12px}.hero strong{display:block;margin-top:4px;font-size:29px}.output{padding:17px;border-bottom:1px solid var(--line)}.row{display:flex;justify-content:space-between;gap:12px;padding:7px 0}.row span{color:var(--muted);font-size:12px}.row strong{font-size:13px;text-align:right}.upgrade{margin-top:18px;padding:14px;background:var(--soft);border-left:3px solid var(--green)}.upgrade p{margin:5px 0 0;font-size:12px}.notice{padding:15px;font-size:11px;color:var(--muted)}.loss{color:var(--red)!important}@media(max-width:720px){main{grid-template-columns:1fr;margin-top:14px}.grid{grid-template-columns:1fr}aside{position:static}section{padding:18px}h1{font-size:21px}}
+  </style>
+</head>
+<body>
+  <header><div class="bar"><div class="mark">BE</div><div class="brand"><strong>订单保本线 Lite</strong><span>单 SKU 免费离线版</span></div></div></header>
+  <main>
+    <section>
+      <h1>退款以后，这一单到底赚不赚？</h1>
+      <p>按已发货订单估算退款货损、双向物流、扣点和广告后的每下单贡献利润。</p>
+      <div class="grid">
+        <label>成交价<input id="price" type="number" min="0" step="0.1" value="59"></label>
+        <label>进货成本<input id="productCost" type="number" min="0" step="0.1" value="18"></label>
+        <label>包材成本<input id="packaging" type="number" min="0" step="0.1" value="2"></label>
+        <label>发出运费<input id="outboundShipping" type="number" min="0" step="0.1" value="5"></label>
+        <label>退回运费<input id="returnShipping" type="number" min="0" step="0.1" value="6"></label>
+        <label>平台+支付费率 %<input id="feePercent" type="number" min="0" max="95" step="0.1" value="6"></label>
+        <label>已发货退款率 %<input id="refundPercent" type="number" min="0" max="95" step="0.1" value="12"></label>
+        <label>退货货损比例 %<input id="damagePercent" type="number" min="0" max="100" step="1" value="20"></label>
+        <label>广告成本/下单<input id="adCost" type="number" min="0" step="0.1" value="9"></label>
+        <label>其他成本/下单<input id="otherCost" type="number" min="0" step="0.1" value="1"></label>
+      </div>
+      <div class="upgrade"><strong>多 SKU 经营版</strong><p>支持目标利润率反推售价、月度组合利润、亏损 SKU 提醒、本地保存、备份和 CSV 导出。</p></div>
+    </section>
+    <aside aria-live="polite">
+      <div class="hero"><span>每下单期望贡献利润</span><strong id="profit">¥0</strong></div>
+      <div class="output">
+        <div class="row"><span>每下单期望收入</span><strong id="revenue">¥0</strong></div>
+        <div class="row"><span>贡献利润率</span><strong id="margin">0%</strong></div>
+        <div class="row"><span>保本售价</span><strong id="breakEven">¥0</strong></div>
+        <div class="row"><span>最高广告成本/单</span><strong id="maxAd">¥0</strong></div>
+        <div class="row"><span>当前 / 保本 ROAS</span><strong id="roas">--</strong></div>
+      </div>
+      <div class="notice">不包含税费、工资、房租等固定开支，不等于会计净利润。费率以卖家后台实际账单为准。</div>
+    </aside>
+  </main>
+  <script>
+  (function(){
+    const ids=["price","productCost","packaging","outboundShipping","returnShipping","feePercent","refundPercent","damagePercent","adCost","otherCost"],el=Object.fromEntries(ids.map(id=>[id,document.getElementById(id)]));
+    const n=id=>Math.max(0,Number(el[id].value)||0),money=v=>new Intl.NumberFormat("zh-CN",{style:"currency",currency:"CNY",maximumFractionDigits:2}).format(v);
+    function update(){const price=n("price"),r=Math.min(n("refundPercent"),95)/100,c=1-r,fee=Math.min(n("feePercent"),95)/100,damage=Math.min(n("damagePercent"),100)/100,revenue=price*c,product=n("productCost")*c+n("productCost")*r*damage,returns=n("returnShipping")*r,nonAd=product+returns+n("packaging")+n("outboundShipping")+n("otherCost"),profit=revenue*(1-fee)-nonAd-n("adCost"),be=(nonAd+n("adCost"))/(c*(1-fee)),maxAd=revenue*(1-fee)-nonAd,current=n("adCost")?revenue/n("adCost"):Infinity,beRoas=maxAd>0?revenue/maxAd:Infinity,fmt=x=>Number.isFinite(x)?x.toFixed(2)+"x":"--";document.getElementById("profit").textContent=money(profit);document.getElementById("profit").classList.toggle("loss",profit<0);document.getElementById("revenue").textContent=money(revenue);document.getElementById("margin").textContent=(revenue?profit/revenue*100:0).toFixed(1)+"%";document.getElementById("breakEven").textContent=money(be);document.getElementById("maxAd").textContent=money(maxAd);document.getElementById("roas").textContent=fmt(current)+" / "+fmt(beRoas)}ids.forEach(id=>el[id].addEventListener("input",update));update();
+  })();
+  </script>
+</body>
+</html>
