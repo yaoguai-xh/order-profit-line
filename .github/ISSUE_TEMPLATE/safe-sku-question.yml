@@ -1,0 +1,48 @@
+name: Safe SKU question
+description: Ask a safe public SKU-profit question without private shop data
+title: "[SKU question]: "
+labels: ["purchase-intent"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not post shop accounts, passwords, order details, customer personal data, store screenshots, supplier contracts, payment details, or private business data.
+  - type: dropdown
+    id: topic
+    attributes:
+      label: Topic
+      options:
+        - Refund and return loss
+        - Shipping and return shipping
+        - Platform/payment fee
+        - Ad cost or ROAS
+        - Multi-SKU comparison
+        - CSV export or backup
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: safe_example
+    attributes:
+      label: Safe generalized example
+      description: Use rounded or fictional numbers. Do not paste real order/customer data.
+      placeholder: "Example: A product sells for 39, costs 18, shipped refund rate is about 12%, ad cost is 9 per order."
+    validations:
+      required: true
+  - type: dropdown
+    id: pro_interest
+    attributes:
+      label: Pro interest
+      options:
+        - I may buy the multi-SKU Pro version when public links are live
+        - Free Lite is enough for now
+        - I am only reporting a bug or doc issue
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy confirmation
+      options:
+        - label: I removed shop accounts, order details, customer data, screenshots, supplier information, and payment details.
+          required: true
