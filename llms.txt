@@ -10,6 +10,12 @@ https://yaoguai-xh.github.io/order-profit-line/
 Sample SKU:
 https://yaoguai-xh.github.io/order-profit-line/sample-sku.html
 
+Free release ZIP:
+https://github.com/yaoguai-xh/order-profit-line/releases/download/v1.0.0/order-profit-line-lite-v1.0.0.zip
+
+SHA256SUMS:
+https://github.com/yaoguai-xh/order-profit-line/releases/download/v1.0.0/SHA256SUMS.txt
+
 Repository:
 https://github.com/yaoguai-xh/order-profit-line
 

@@ -9,6 +9,12 @@ https://yaoguai-xh.github.io/order-profit-line/
 样例 SKU：
 https://yaoguai-xh.github.io/order-profit-line/sample-sku.html
 
+免费下载：
+https://github.com/yaoguai-xh/order-profit-line/releases/download/v1.0.0/order-profit-line-lite-v1.0.0.zip
+
+SHA256SUMS：
+https://github.com/yaoguai-xh/order-profit-line/releases/download/v1.0.0/SHA256SUMS.txt
+
 ## 适合
 
 - 想判断一个 SKU 在退款后是否还赚钱；
