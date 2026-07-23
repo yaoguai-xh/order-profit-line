@@ -1,0 +1,19 @@
+# 订单保本线 Lite
+
+订单保本线 Lite is a free offline single-SKU contribution profit calculator for
+small e-commerce sellers. It estimates profit after shipped refunds, return
+damage, two-way shipping, platform/payment fees, and ad cost.
+
+Tool:
+https://yaoguai-xh.github.io/order-profit-line/
+
+Repository:
+https://github.com/yaoguai-xh/order-profit-line
+
+Pro status:
+https://github.com/yaoguai-xh/order-profit-line/issues/1
+
+Boundary: the tool runs in the browser and does not require login, backend,
+shop connection, analytics, API keys, or data upload. Do not post shop accounts,
+passwords, order details, customer data, store screenshots, supplier contracts,
+or payment details in public issues.

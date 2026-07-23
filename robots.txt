@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yaoguai-xh.github.io/order-profit-line/sitemap.xml
