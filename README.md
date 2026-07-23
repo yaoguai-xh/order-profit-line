@@ -35,3 +35,6 @@ https://yaoguai-xh.github.io/order-profit-line/
 - JSON 备份和 CSV 导出。
 
 正式支付链接发布前，本仓库不私下收款。
+
+上架通知 / 购买意向公开 issue：
+https://github.com/yaoguai-xh/order-profit-line/issues/1
