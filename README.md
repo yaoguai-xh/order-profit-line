@@ -9,6 +9,9 @@ https://yaoguai-xh.github.io/order-profit-line/
 样例 SKU：
 https://yaoguai-xh.github.io/order-profit-line/sample-sku.html
 
+退款后利润口径清单：
+https://yaoguai-xh.github.io/order-profit-line/refund-profit-checklist.html
+
 免费下载：
 https://github.com/yaoguai-xh/order-profit-line/releases/download/v1.0.0/order-profit-line-lite-v1.0.0.zip
 
@@ -19,6 +22,7 @@ https://github.com/yaoguai-xh/order-profit-line/releases/download/v1.0.0/SHA256S
 
 - 想判断一个 SKU 在退款后是否还赚钱；
 - 想估算保本售价、最高广告成本和当前 ROAS 压力；
+- 想分清未发货退款、已发货退款、返程物流和货损对利润的影响；
 - 想在不上传经营数据的情况下先做快速测算。
 
 ## 不适合

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="小电商 SKU 利润口径清单：如何把已发货退款、返程物流、货损、平台扣点和广告成本纳入保本价与保本 ROAS 计算。">
+  <title>退款后利润怎么算｜小电商 SKU 保本价与保本 ROAS 清单</title>
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://yaoguai-xh.github.io/order-profit-line/refund-profit-checklist.html">
+  <style>
+    :root{--ink:#1d2528;--muted:#60696d;--line:#d8dddc;--paper:#fff;--bg:#f4f6f4;--green:#176b55;--soft:#e6f1ed;font-family:Inter,"PingFang SC","Microsoft YaHei",system-ui,sans-serif}*{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--bg);line-height:1.65}main{width:min(860px,calc(100% - 24px));margin:32px auto 56px;background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:28px}a{color:var(--green)}h1{font-size:28px;line-height:1.2;margin:0 0 10px}h2{margin-top:30px;font-size:20px}p,li{color:var(--muted)}.note{padding:14px 16px;background:var(--soft);border-left:4px solid var(--green);border-radius:6px}.formula{padding:12px 14px;background:#f7f8f7;border:1px solid var(--line);border-radius:6px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:#2f3739;overflow:auto}.nav{font-size:13px;margin-bottom:18px}.cta{margin-top:28px;padding:18px;border:1px solid var(--line);border-radius:8px;background:#fbfcfb}@media(max-width:640px){main{padding:20px;margin-top:16px}h1{font-size:23px}}
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "退款后利润怎么算：小电商 SKU 保本价与保本 ROAS 清单",
+      "inLanguage": "zh-CN",
+      "author": {"@type": "Organization", "name": "一页经营工具"},
+      "mainEntityOfPage": "https://yaoguai-xh.github.io/order-profit-line/refund-profit-checklist.html"
+    }
+  </script>
+</head>
+<body>
+  <main>
+    <div class="nav"><a href="./">返回计算器</a> · <a href="sample-sku.html">样例 SKU</a> · <a href="https://yaoguai-xh.github.io/one-page-business-tools/">工具目录</a></div>
+    <h1>退款后利润怎么算：小电商 SKU 保本价与保本 ROAS 清单</h1>
+    <p>如果只用“售价 - 进货价”判断一个 SKU，最容易漏掉的不是数学，而是口径。已发货订单发生退款时，广告费、包材、正向物流、返程物流、平台扣点和货损不一定会一起消失。</p>
+
+    <div class="note">这份清单用于经营测算，不是税务、会计审计或收益保证。所有平台费率和退款处理规则都应以卖家自己的后台账单为准。</div>
+
+    <h2>1. 先分清未发货退款和已发货退款</h2>
+    <p>未发货退款通常不会发生发出运费和包材消耗；已发货退款可能已经发生履约成本，还可能带来返程运费和货损。把两者混成一个退款率，会低估亏损 SKU 的真实压力。</p>
+
+    <h2>2. 每下单贡献利润的基本口径</h2>
+    <div class="formula">每下单期望收入 = 成交价 × (1 - 已发货退款率)
+订单贡献利润 = 每下单期望收入 × (1 - 平台/支付费率)
+             - 进货成本 × (未退款成交占比 + 退款率 × 货损比例)
+             - 包材 - 发出运费 - 退款率 × 返程运费
+             - 广告成本/下单 - 其他变动成本</div>
+    <p>这个口径的核心是：先判断一笔“已产生履约成本的下单”在概率意义上还能留下多少贡献，而不是只看成交时的毛差价。</p>
+
+    <h2>3. 需要单独填的字段</h2>
+    <ul>
+      <li>成交价：实际到消费者看到的成交价格，不含你不想纳入口径的补贴。</li>
+      <li>进货成本：单件商品成本，按当前批次或平均采购成本填写。</li>
+      <li>包材和发出运费：只要已发货就通常已经消耗。</li>
+      <li>平台/支付费率：按后台账单或结算明细填写，不要照搬别人的类目费率。</li>
+      <li>已发货退款率：不要混入未发货退款。</li>
+      <li>返程运费：退货时由卖家承担或间接承担的平均费用。</li>
+      <li>退货货损比例：可二次销售填较低比例；无法二次销售可接近 100%。</li>
+      <li>广告成本/下单：按实际获客成本或投流消耗除以下单数估算。</li>
+    </ul>
+
+    <h2>4. 保本 ROAS 为什么不是行业固定值</h2>
+    <p>同样 2.0 的 ROAS，对高毛利、低退款、轻物流商品可能有利润；对低毛利、高退货、重物流商品可能亏损。保本 ROAS 应该来自自己的最高可承受广告成本。</p>
+    <div class="formula">最高广告成本/下单 = 每下单期望收入 × (1 - 平台/支付费率) - 非广告变动成本
+保本 ROAS = 每下单期望收入 ÷ 最高广告成本/下单</div>
+
+    <h2>5. 什么时候该停投或改价</h2>
+    <ul>
+      <li>每下单贡献利润为负：销量增长会放大亏损。</li>
+      <li>当前广告成本高于最高可承受广告成本：要么降获客成本，要么改价/改成本结构。</li>
+      <li>保本售价明显高于市场可接受价格：这个 SKU 可能不适合继续买量。</li>
+      <li>退款率和货损率不稳定：先用保守口径测算，避免乐观估计。</li>
+    </ul>
+
+    <div class="cta">
+      <strong>直接测一次：</strong>
+      <p><a href="./">打开订单保本线 Lite</a>，填入一个真实 SKU 的成交价、进货、物流、扣点、退款、货损和广告成本。工具完全离线，不需要登录店铺，也不会上传数据。</p>
+    </div>
+  </main>
+</body>
+</html>

@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="免费计算退款、平台费、广告和双向物流后的订单贡献利润。">
-  <title>订单保本线 Lite</title>
+  <meta name="description" content="免费计算小电商 SKU 在已发货退款、货损、双向物流、平台扣点和广告成本后的真实订单贡献利润。">
+  <title>订单保本线 Lite｜退款、广告、扣点后的 SKU 利润计算器</title>
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://yaoguai-xh.github.io/order-profit-line/">
   <link rel="sitemap" type="application/xml" href="https://yaoguai-xh.github.io/order-profit-line/sitemap.xml">
-  <meta property="og:title" content="订单保本线 Lite">
-  <meta property="og:description" content="免费计算退款、平台费、广告和双向物流后的订单贡献利润。">
+  <meta property="og:title" content="订单保本线 Lite｜退款、广告、扣点后的 SKU 利润计算器">
+  <meta property="og:description" content="免费计算小电商 SKU 在已发货退款、货损、双向物流、平台扣点和广告成本后的真实订单贡献利润。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://yaoguai-xh.github.io/order-profit-line/">
   <script type="application/ld+json">
@@ -20,20 +20,21 @@
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "Any modern browser",
       "url": "https://yaoguai-xh.github.io/order-profit-line/",
-      "description": "免费计算退款、平台费、广告和双向物流后的订单贡献利润。",
+      "description": "免费计算小电商 SKU 在已发货退款、货损、双向物流、平台扣点和广告成本后的真实订单贡献利润。",
       "offers": {"@type": "Offer", "price": "0", "priceCurrency": "CNY"}
     }
   </script>
   <style>
-    :root{--ink:#1d2528;--muted:#60696d;--line:#d8dddc;--paper:#fff;--bg:#f4f6f4;--green:#176b55;--soft:#e6f1ed;--red:#a33d37;font-family:Inter,"PingFang SC","Microsoft YaHei",system-ui,sans-serif}*{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--bg);line-height:1.45}header{border-bottom:1px solid var(--line);background:#fff}.bar,main{width:min(900px,calc(100% - 24px));margin:0 auto}.bar{min-height:64px;display:flex;align-items:center;gap:11px}.mark{width:35px;height:35px;display:grid;place-items:center;color:#fff;background:var(--ink);border-radius:5px;font-size:11px;font-weight:800}.brand span{display:block;color:var(--muted);font-size:12px}main{margin-top:28px;margin-bottom:50px;display:grid;grid-template-columns:minmax(0,1fr) 310px;gap:17px;align-items:start}section,aside{background:var(--paper);border:1px solid var(--line);border-radius:6px}section{padding:24px}aside{position:sticky;top:16px;overflow:hidden}h1{margin:0 0 7px;font-size:24px;letter-spacing:0}p{color:var(--muted)}.grid{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:20px}label{display:grid;gap:5px;color:var(--muted);font-size:12px;font-weight:650}input{width:100%;min-height:40px;padding:8px 10px;border:1px solid var(--line);border-radius:6px;font:inherit}.hero{padding:21px;color:#fff;background:var(--ink)}.hero span{color:#d2d9d7;font-size:12px}.hero strong{display:block;margin-top:4px;font-size:29px}.output{padding:17px;border-bottom:1px solid var(--line)}.row{display:flex;justify-content:space-between;gap:12px;padding:7px 0}.row span{color:var(--muted);font-size:12px}.row strong{font-size:13px;text-align:right}.upgrade{margin-top:18px;padding:14px;background:var(--soft);border-left:3px solid var(--green)}.upgrade p{margin:5px 0 0;font-size:12px}.notice{padding:15px;font-size:11px;color:var(--muted)}.loss{color:var(--red)!important}@media(max-width:720px){main{grid-template-columns:1fr;margin-top:14px}.grid{grid-template-columns:1fr}aside{position:static}section{padding:18px}h1{font-size:21px}}
+    :root{--ink:#1d2528;--muted:#60696d;--line:#d8dddc;--paper:#fff;--bg:#f4f6f4;--green:#176b55;--soft:#e6f1ed;--red:#a33d37;--warn:#fff3df;font-family:Inter,"PingFang SC","Microsoft YaHei",system-ui,sans-serif}*{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--bg);line-height:1.45}header{border-bottom:1px solid var(--line);background:#fff}.bar,main,.content{width:min(980px,calc(100% - 24px));margin:0 auto}.bar{min-height:64px;display:flex;align-items:center;gap:11px}.mark{width:35px;height:35px;display:grid;place-items:center;color:#fff;background:var(--ink);border-radius:5px;font-size:11px;font-weight:800}.brand span{display:block;color:var(--muted);font-size:12px}main{margin-top:28px;margin-bottom:22px;display:grid;grid-template-columns:minmax(0,1fr) 310px;gap:17px;align-items:start}.content{margin-bottom:54px;display:grid;gap:14px}section,aside,.card{background:var(--paper);border:1px solid var(--line);border-radius:6px}section,.card{padding:24px}aside{position:sticky;top:16px;overflow:hidden}h1{margin:0 0 7px;font-size:26px;letter-spacing:0}h2{margin:0 0 10px;font-size:18px}p,li{color:var(--muted)}.lede{font-size:15px}.pill{display:inline-block;margin-bottom:10px;padding:5px 9px;border-radius:999px;background:var(--warn);color:#7b4c00;font-size:12px;font-weight:700}.grid{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:20px}label{display:grid;gap:5px;color:var(--muted);font-size:12px;font-weight:650}input{width:100%;min-height:40px;padding:8px 10px;border:1px solid var(--line);border-radius:6px;font:inherit}.hero{padding:21px;color:#fff;background:var(--ink)}.hero span{color:#d2d9d7;font-size:12px}.hero strong{display:block;margin-top:4px;font-size:29px}.output{padding:17px;border-bottom:1px solid var(--line)}.row{display:flex;justify-content:space-between;gap:12px;padding:7px 0}.row span{color:var(--muted);font-size:12px}.row strong{font-size:13px;text-align:right}.upgrade{margin-top:18px;padding:14px;background:var(--soft);border-left:3px solid var(--green)}.upgrade p{margin:5px 0 0;font-size:12px}.notice{padding:15px;font-size:11px;color:var(--muted)}.loss{color:var(--red)!important}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.mini{padding:14px;border:1px solid var(--line);border-radius:6px;background:#fbfcfb}.mini strong{display:block;margin-bottom:5px}@media(max-width:720px){main{grid-template-columns:1fr;margin-top:14px}.grid,.cards{grid-template-columns:1fr}aside{position:static}section,.card{padding:18px}h1{font-size:22px}}
   </style>
 </head>
 <body>
-  <header><div class="bar"><div class="mark">BE</div><div class="brand"><strong>订单保本线 Lite</strong><span>单 SKU 免费离线版 · <a href="https://yaoguai-xh.github.io/one-page-business-tools/">工具目录</a> · <a href="sample-sku.html">样例 SKU</a></span></div></div></header>
+  <header><div class="bar"><div class="mark">BE</div><div class="brand"><strong>订单保本线 Lite</strong><span>单 SKU 免费离线版 · <a href="https://yaoguai-xh.github.io/one-page-business-tools/">工具目录</a> · <a href="sample-sku.html">样例 SKU</a> · <a href="refund-profit-checklist.html">利润口径清单</a></span></div></div></header>
   <main>
     <section>
-      <h1>退款以后，这一单到底赚不赚？</h1>
-      <p>按已发货订单估算退款货损、双向物流、扣点和广告后的每下单贡献利润。</p>
+      <span class="pill">给小电商卖家的免费离线测算页</span>
+      <h1>售价减进货价不等于利润。先算已发货退款后的每单贡献。</h1>
+      <p class="lede">把成交价、进货、包材、双向物流、平台扣点、已发货退款率、退货货损和广告成本放在同一个模型里，判断一个 SKU 是在赚钱，还是卖得越多亏得越多。</p>
       <div class="grid">
         <label>成交价<input id="price" type="number" min="0" step="0.1" value="59"></label>
         <label>进货成本<input id="productCost" type="number" min="0" step="0.1" value="18"></label>
@@ -46,7 +47,7 @@
         <label>广告成本/下单<input id="adCost" type="number" min="0" step="0.1" value="9"></label>
         <label>其他成本/下单<input id="otherCost" type="number" min="0" step="0.1" value="1"></label>
       </div>
-      <div class="upgrade"><strong>多 SKU 经营版</strong><p>支持目标利润率反推售价、月度组合利润、亏损 SKU 提醒、本地保存、备份和 CSV 导出。</p><p>先看 <a href="sample-sku.html">样例 SKU 分析</a>，了解退款、货损、物流和广告如何把毛差价变成亏损。</p><p>免费离线包：<a href="https://github.com/yaoguai-xh/order-profit-line/releases/download/v1.0.0/order-profit-line-lite-v1.0.0.zip">下载 ZIP</a> · <a href="https://github.com/yaoguai-xh/order-profit-line/releases/download/v1.0.0/SHA256SUMS.txt">SHA256SUMS</a>。</p><p>正式支付链接尚未上线；如需上架通知，请关注 <a href="https://github.com/yaoguai-xh/order-profit-line/issues/1">Pro 版状态 issue</a>。不要在 issue 中发布店铺数据或付款信息。</p></div>
+      <div class="upgrade"><strong>多 SKU 经营版</strong><p>支持目标利润率反推售价、月度组合利润、亏损 SKU 提醒、本地保存、备份和 CSV 导出。</p><p>先看 <a href="sample-sku.html">样例 SKU 分析</a> 和 <a href="refund-profit-checklist.html">利润口径清单</a>，了解退款、货损、物流和广告如何把毛差价变成亏损。</p><p>免费离线包：<a href="https://github.com/yaoguai-xh/order-profit-line/releases/download/v1.0.0/order-profit-line-lite-v1.0.0.zip">下载 ZIP</a> · <a href="https://github.com/yaoguai-xh/order-profit-line/releases/download/v1.0.0/SHA256SUMS.txt">SHA256SUMS</a>。</p><p>正式支付链接尚未上线；如需上架通知，请关注 <a href="https://github.com/yaoguai-xh/order-profit-line/issues/1">Pro 版状态 issue</a>。不要在 issue 中发布店铺数据或付款信息。</p></div>
     </section>
     <aside aria-live="polite">
       <div class="hero"><span>每下单期望贡献利润</span><strong id="profit">¥0</strong></div>
@@ -60,6 +61,16 @@
       <div class="notice">不包含税费、工资、房租等固定开支，不等于会计净利润。费率以卖家后台实际账单为准。</div>
     </aside>
   </main>
+  <div class="content">
+    <div class="card">
+      <h2>为什么这类计算值得单独做？</h2>
+      <div class="cards">
+        <div class="mini"><strong>退款不只是少收钱</strong><span>已发货退款可能已经消耗包材、发出运费、广告费，还可能产生返程物流和货损。</span></div>
+        <div class="mini"><strong>扣点和广告会吃掉毛差价</strong><span>售价和进货价之间的空间，要先扣掉平台/支付费和获客成本，才是可用贡献。</span></div>
+        <div class="mini"><strong>保本 ROAS 是自己的</strong><span>不同 SKU 的重量、退款率、货损和扣点不同，不能直接套别人的投产比目标。</span></div>
+      </div>
+    </div>
+  </div>
   <script>
   (function(){
     const ids=["price","productCost","packaging","outboundShipping","returnShipping","feePercent","refundPercent","damagePercent","adCost","otherCost"],el=Object.fromEntries(ids.map(id=>[id,document.getElementById(id)]));

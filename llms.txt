@@ -10,6 +10,9 @@ https://yaoguai-xh.github.io/order-profit-line/
 Sample SKU:
 https://yaoguai-xh.github.io/order-profit-line/sample-sku.html
 
+Refund-profit checklist:
+https://yaoguai-xh.github.io/order-profit-line/refund-profit-checklist.html
+
 Free release ZIP:
 https://github.com/yaoguai-xh/order-profit-line/releases/download/v1.0.0/order-profit-line-lite-v1.0.0.zip
 
