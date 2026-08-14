@@ -14,10 +14,13 @@ Refund-profit checklist:
 https://yaoguai-xh.github.io/order-profit-line/refund-profit-checklist.html
 
 Free release ZIP:
-https://github.com/yaoguai-xh/order-profit-line/releases/download/v1.0.0/order-profit-line-lite-v1.0.0.zip
+https://github.com/yaoguai-xh/order-profit-line/releases/download/v1.0.1/order-profit-line-lite-v1.0.1.zip
 
 SHA256SUMS:
-https://github.com/yaoguai-xh/order-profit-line/releases/download/v1.0.0/SHA256SUMS.txt
+https://github.com/yaoguai-xh/order-profit-line/releases/download/v1.0.1/SHA256SUMS.txt
+
+Single-SKU spreadsheet template:
+https://yaoguai-xh.github.io/order-profit-line/spreadsheet-single-sku.csv
 
 Repository:
 https://github.com/yaoguai-xh/order-profit-line
